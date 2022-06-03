@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica proyecto</title>
+    <script src="https://kit.fontawesome.com/0fe04060f9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="padre">
+    <header class="header">
+        <div class="menu margen-interno">
+            <div class="logo">
+                <a href="index.html">Proyecto Audiovisual</a>
+            </div>
+            <button class="nav-btn" onclick="accion()">Menú</button>
+            <nav class="nav desaparece">
+                
+                <a href="index.html"><i class="fa-regular fa-life-ring"></i>Inicio</a>
+                <a href="#"><i class="fa-regular fa-paper-plane"></i>Docentes</a>
+                <a href="proyectos.html"><i class="fa-regular fa-object-ungroup"></i>Proyectos</a>
+                <a href="#"><i class="fa-regular fa-pen-to-square"></i>Noticias</a>
+                <a href="contacto.html"><i class="fa-regular fa-user"></i>Contacto</a>
+            </nav>
+            <div class="social">
+                <div><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></div>
+                <div><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></div>
+            </div>
+        </div>
+        <div class="texto-principal margen-interno">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore beatae cumque earum mollitia esse consequuntur perferendis ex omnis voluptatibus ducimus amet aliquam quo, voluptate natus fugiat at, dolores iste tempore provident minima ullam magnam deleniti? Aut nihil totam quae minima, animi nam ratione impedit rerum provident, ipsa exercitationem porro eligendi.</h1>
+        </div>
+    </header>
+
+    <section class="margen-interno">
+        <div class="articulos">
+            <article class="article">
+                <img src="imagenes/1.jpg" alt="">
+                <h3>3 de Junio 2022</h3>
+                <h2>Arrancan los rodajes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet. Facilis dignissimos molestiae repellat aperiam commodi. Corrupti iure aspernatur laborum molestiae et nisi maxime cum sapiente voluptate, dignissimos aliquid animi!</p>
+                <a href="#">Leer más...</a>
+            </article>
+            <article class="article">
+                <img src="imagenes/2.jpg" alt="">
+                <h3>20 de Mayo 2022</h3>
+                <h2>Gran concurrencia 2022</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet. Facilis dignissimos molestiae repellat aperiam commodi. Corrupti iure aspernatur laborum molestiae et nisi maxime cum sapiente voluptate, dignissimos aliquid animi!</p>
+                <a href="#">Leer más...</a>
+            </article>
+            <article class="article">
+                <img src="imagenes/3.jpg" alt="">
+                <h3>28 de Marzo 2022</h3>
+                <h2>Cine más cerca</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet. Facilis dignissimos molestiae repellat aperiam commodi. Corrupti iure aspernatur laborum molestiae et nisi maxime cum sapiente voluptate, dignissimos aliquid animi!</p>
+                <a href="#">Leer más...</a>
+            </article>
+            <article class="article">
+                <img src="imagenes/4.jpg" alt="">
+                <h3>15 de Febrero 2022</h3>
+                <h2>Aumentamos los recursos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet. Facilis dignissimos molestiae repellat aperiam commodi. Corrupti iure aspernatur laborum molestiae et nisi maxime cum sapiente voluptate, dignissimos aliquid animi!</p>
+                <a href="#">Leer más...</a>
+            </article>
+            <nav class="navegacion">
+                <a href="">Inicio</a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+            </nav>
+        </div>
+        <aside>
+            <div class="publicidad">
+                <h4>Participamos en</h4>
+                <a href="https://www.buenosaires.gob.ar/cultura/festivales-de-buenos/bafici"><img src="imagenes/5.jpg" alt=""></a>
+            </div>
+            <div class="publicidad">
+                <h4>Con el apoyo de</h4>
+                <a href="http://www.incaa.gov.ar/"><img src="imagenes/6.jpg" alt=""></a>
+            </div>
+            <div class="publicidad">
+                <h4>Académico</h4>
+                <a href="https://www.unso.edu.ar/"><img src="imagenes/7.jpg" alt=""></a>
+        </div>
+        </aside>
+    </section>
+
+    <footer class="margen-interno">
+        <nav class="pie">
+                <ul class="pie">
+                    <li><a href="https://www.linkedin.com/"><i id="social-ln" class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://github.com/"><i id="social-gh" class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i id="social-ig" class="fa fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter"></i></a></li>
+                </ul>
+                    <div>
+                        <p class="p1">Desarrollado por Nicolás Rossendy &copy; 2022</p>
+                    </div>
+        </nav>
+    </footer>
+
+    </div>
+    <script>
+        function accion(){
+            var ancla = document.getElementsByClassName('nav');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+
+</body>
+</html>
