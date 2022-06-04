@@ -1,4 +1,4 @@
-/* function ValidateActInsert() {
+function ValidateActInsert() {
   var specialChars = /[^a-zA-Z0-9 ]/g;
   if (document.actorInsert.actInsert.value.match(specialChars)) {
       alert ("Only characters A-Z, a-z and 0-9 are allowed!")
@@ -6,7 +6,7 @@
       return false;
   }
   return (true);
-} */
+}
 const dots = document.querySelector('.dots');
 dots.addEventListener('click', e => {
   const target = e.target;
@@ -45,8 +45,8 @@ function contactForm() {
       return false;
     }
   
-    if (contactMessage.length <= 30) {
-      text = "Message should have at least 30 characters";
+    if (contactMessage.length <= 20) {
+      text = "El mensaje debe tener más de 20 caractéres";
       contactError_message.innerHTML = text;
       return false;
     }
