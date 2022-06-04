@@ -243,6 +243,7 @@ footer{
 .map-cont{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .iframe-container{
     display: flex;
