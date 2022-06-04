@@ -248,7 +248,7 @@ footer{
 .iframe-container{
     display: flex;
     align-items: center;
-
+    overflow: auto;
 }
 iframe{
     border-radius: 12px;
