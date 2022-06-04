@@ -12,12 +12,70 @@ a{
 h2{
     color: #2e2e2e;
 }
+
+.p2{
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    transition: background 0.2s ease-out;
+    white-space: nowrap;
+
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(to right,#444444 10%, #8a7e7e 50%, #e4b78e 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+  }
+  @keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+  
+  span {
+    position: relative;
+  }
+  
+  span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: #000;
+    bottom: 9px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .p2:hover {
+    background-position: 0 11px;
+  }
+  
+  span:hover:before {
+    transform: translateY(10px)
+  }
+
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
 .margen-interno{
     padding: 0 50px;
+}
+.contacto-low{
+    display: flex;
+    align-items: center;
 }
 .header{
     background: url(imagenes/bg-2.jpg);
@@ -183,17 +241,18 @@ footer{
         letter-spacing: 2px;
     }
 .map-cont{
+    display: flex;
     align-items: center;
 }
 .iframe-container{
     display: flex;
     align-items: center;
-    overflow: auto;
 
 }
 iframe{
     border-radius: 12px;
     box-shadow: 4px 4px 14px #444;
+    align-self: center;
 }
   
   .box {
