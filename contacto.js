@@ -1,12 +1,4 @@
-function ValidateActInsert() {
-  var specialChars = /[^a-zA-Z0-9 ]/g;
-  if (document.actorInsert.actInsert.value.match(specialChars)) {
-      alert ("Only characters A-Z, a-z and 0-9 are allowed!")
-      document.actorInsert.actInsert.focus();
-      return false;
-  }
-  return (true);
-}
+/*A
 const dots = document.querySelector('.dots');
 dots.addEventListener('click', e => {
   const target = e.target;
@@ -21,7 +13,7 @@ dots.addEventListener('click', e => {
     behavior: 'smooth',
     inline: 'start'
   })
-})
+})*/
 
 function contactForm() {
     var contactName = document.getElementById("nombre").value;
